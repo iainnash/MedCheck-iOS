@@ -17,6 +17,10 @@
 		AE1351BA1BB6E59600B4ED63 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351B91BB6E59600B4ED63 /* Charts.framework */; };
 		AE1351BC1BB6E59900B4ED63 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351BB1BB6E59900B4ED63 /* AFNetworking.framework */; };
 		AE1351BE1BB6E59C00B4ED63 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351BD1BB6E59C00B4ED63 /* SwiftyJSON.framework */; };
+		AE1351C01BB7227F00B4ED63 /* HealthDataReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351BF1BB7227F00B4ED63 /* HealthDataReader.swift */; settings = {ASSET_TAGS = (); }; };
+		AE1351C41BB7373800B4ED63 /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351C31BB7373800B4ED63 /* SplashPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AE1351C61BB73E3C00B4ED63 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351C51BB73E3C00B4ED63 /* HealthKit.framework */; };
+		AE1351C91BB73ED800B4ED63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,11 @@
 		AE1351B91BB6E59600B4ED63 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "Pods/../build/Debug-iphoneos/Charts.framework"; sourceTree = "<group>"; };
 		AE1351BB1BB6E59900B4ED63 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
 		AE1351BD1BB6E59C00B4ED63 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		AE1351BF1BB7227F00B4ED63 /* HealthDataReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthDataReader.swift; sourceTree = "<group>"; };
+		AE1351C31BB7373800B4ED63 /* SplashPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPageViewController.swift; sourceTree = "<group>"; };
+		AE1351C51BB73E3C00B4ED63 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		AE1351C71BB73E3C00B4ED63 /* MedCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MedCheck.entitlements; sourceTree = "<group>"; };
+		AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		C3DEEB4458A34F076CE2FFAD /* Pods-MedCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck.release.xcconfig"; sourceTree = "<group>"; };
 		E0DD2869661C36022D682938 /* Pods-MedCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -45,6 +54,7 @@
 				AE1351BC1BB6E59900B4ED63 /* AFNetworking.framework in Frameworks */,
 				AE1351BA1BB6E59600B4ED63 /* Charts.framework in Frameworks */,
 				6E067597DF1FC2AA90BF56CF /* Pods_MedCheck.framework in Frameworks */,
+				AE1351C61BB73E3C00B4ED63 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,7 @@
 		A9319CA375171B6B5DA8035E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE1351C51BB73E3C00B4ED63 /* HealthKit.framework */,
 				AE1351BD1BB6E59C00B4ED63 /* SwiftyJSON.framework */,
 				AE1351BB1BB6E59900B4ED63 /* AFNetworking.framework */,
 				AE1351B91BB6E59600B4ED63 /* Charts.framework */,
@@ -92,6 +103,7 @@
 		AE1351A41BB6BE5C00B4ED63 /* MedCheck */ = {
 			isa = PBXGroup;
 			children = (
+				AE1351C71BB73E3C00B4ED63 /* MedCheck.entitlements */,
 				AE1351A51BB6BE5C00B4ED63 /* AppDelegate.swift */,
 				AE1351A71BB6BE5C00B4ED63 /* FirstViewController.swift */,
 				AE1351A91BB6BE5C00B4ED63 /* SecondViewController.swift */,
@@ -99,6 +111,9 @@
 				AE1351AE1BB6BE5C00B4ED63 /* Assets.xcassets */,
 				AE1351B01BB6BE5C00B4ED63 /* LaunchScreen.storyboard */,
 				AE1351B31BB6BE5C00B4ED63 /* Info.plist */,
+				AE1351BF1BB7227F00B4ED63 /* HealthDataReader.swift */,
+				AE1351C31BB7373800B4ED63 /* SplashPageViewController.swift */,
+				AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */,
 			);
 			path = MedCheck;
 			sourceTree = "<group>";
@@ -138,6 +153,11 @@
 					AE1351A11BB6BE5C00B4ED63 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = Q7JF4W9WF8;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -225,9 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1351C01BB7227F00B4ED63 /* HealthDataReader.swift in Sources */,
+				AE1351C41BB7373800B4ED63 /* SplashPageViewController.swift in Sources */,
 				AE1351AA1BB6BE5C00B4ED63 /* SecondViewController.swift in Sources */,
 				AE1351A61BB6BE5C00B4ED63 /* AppDelegate.swift in Sources */,
 				AE1351A81BB6BE5C00B4ED63 /* FirstViewController.swift in Sources */,
+				AE1351C91BB73ED800B4ED63 /* LoadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +362,7 @@
 			baseConfigurationReference = E0DD2869661C36022D682938 /* Pods-MedCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MedCheck/MedCheck.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -360,6 +384,7 @@
 			baseConfigurationReference = C3DEEB4458A34F076CE2FFAD /* Pods-MedCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MedCheck/MedCheck.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
