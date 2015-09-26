@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C24DE9B4E68583AED678FCAA0A3082B2AE0C2BAF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "89CF18A75444A26027A08B1FA96E1F1A31747546" : 0,
+    "C24DE9B4E68583AED678FCAA0A3082B2AE0C2BAF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "48D7EE73-E406-436F-AF68-406CE90667B9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "89CF18A75444A26027A08B1FA96E1F1A31747546" : "",
+    "C24DE9B4E68583AED678FCAA0A3082B2AE0C2BAF" : "MedCheck-iOS\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MedCheck",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MedCheck.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/danagilliann\/MedCheck.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "89CF18A75444A26027A08B1FA96E1F1A31747546"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/iainnash\/MedCheck-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C24DE9B4E68583AED678FCAA0A3082B2AE0C2BAF"
+    }
+  ]
+}
