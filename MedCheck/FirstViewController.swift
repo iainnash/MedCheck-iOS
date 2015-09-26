@@ -31,7 +31,6 @@ class FirstViewController: UIViewController, ChartViewDelegate {
     setData()
     
     super.viewDidLoad()
-
   }
 
   func setData() {
@@ -55,10 +54,7 @@ class FirstViewController: UIViewController, ChartViewDelegate {
     chartView.setNeedsDisplay()
     chartView.notifyDataSetChanged()
     chartView.delegate = self
-    
   }
-  
-  
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
