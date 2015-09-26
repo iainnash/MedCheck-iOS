@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Summary-->
+        <!--Progress-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="MedCheck" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                             <constraint firstItem="ZuF-Cs-sqr" firstAttribute="leading" secondItem="tl1-mJ-TOR" secondAttribute="leadingMargin" constant="8" id="sY5-nO-r9Y"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="Summary" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Progress" image="magnifying-glass40" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="chartView" destination="ZuF-Cs-sqr" id="ZT9-ia-QbV"/>
                     </connections>
@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="410"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Welcome!-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="MedCheck" customModuleProvider="target" sceneMemberID="viewController">
@@ -93,7 +93,7 @@
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Welcome!" image="first" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,24 +292,29 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--User Settings-->
         <scene sceneID="Jk8-Rg-IMG">
             <objects>
                 <viewController id="yaz-be-2Uv" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="O6P-tf-ygF"/>
-                        <viewControllerLayoutGuide type="bottom" id="7aq-A1-phu"/>
+                        <viewControllerLayoutGuide type="top" id="EU5-r1-kh6"/>
+                        <viewControllerLayoutGuide type="bottom" id="gB3-er-CJm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="UoU-Pm-5ER">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="dNc-d8-1V6"/>
+                    <tabBarItem key="tabBarItem" title="User Settings" image="settings38" id="dNc-d8-1V6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M8i-jD-3Eu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37" y="752"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="magnifying-glass40" width="32" height="32"/>
+        <image name="settings38" width="32" height="32"/>
+    </resources>
 </document>
