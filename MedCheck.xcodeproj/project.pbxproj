@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E067597DF1FC2AA90BF56CF /* Pods_MedCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72116F4743D877C49A87F084 /* Pods_MedCheck.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AE1351A61BB6BE5C00B4ED63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351A51BB6BE5C00B4ED63 /* AppDelegate.swift */; };
 		AE1351A81BB6BE5C00B4ED63 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351A71BB6BE5C00B4ED63 /* FirstViewController.swift */; };
 		AE1351AA1BB6BE5C00B4ED63 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351A91BB6BE5C00B4ED63 /* SecondViewController.swift */; };
 		AE1351AD1BB6BE5C00B4ED63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1351AB1BB6BE5C00B4ED63 /* Main.storyboard */; };
 		AE1351AF1BB6BE5C00B4ED63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1351AE1BB6BE5C00B4ED63 /* Assets.xcassets */; };
 		AE1351B21BB6BE5C00B4ED63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE1351B01BB6BE5C00B4ED63 /* LaunchScreen.storyboard */; };
+		AE1351BA1BB6E59600B4ED63 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351B91BB6E59600B4ED63 /* Charts.framework */; };
+		AE1351BC1BB6E59900B4ED63 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351BB1BB6E59900B4ED63 /* AFNetworking.framework */; };
+		AE1351BE1BB6E59C00B4ED63 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351BD1BB6E59C00B4ED63 /* SwiftyJSON.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72116F4743D877C49A87F084 /* Pods_MedCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1351A21BB6BE5C00B4ED63 /* MedCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1351A51BB6BE5C00B4ED63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE1351A71BB6BE5C00B4ED63 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		AE1351AE1BB6BE5C00B4ED63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE1351B11BB6BE5C00B4ED63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE1351B31BB6BE5C00B4ED63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE1351B91BB6E59600B4ED63 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "Pods/../build/Debug-iphoneos/Charts.framework"; sourceTree = "<group>"; };
+		AE1351BB1BB6E59900B4ED63 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = "Pods/../build/Debug-iphoneos/AFNetworking.framework"; sourceTree = "<group>"; };
+		AE1351BD1BB6E59C00B4ED63 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		C3DEEB4458A34F076CE2FFAD /* Pods-MedCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck.release.xcconfig"; sourceTree = "<group>"; };
+		E0DD2869661C36022D682938 /* Pods-MedCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE1351BE1BB6E59C00B4ED63 /* SwiftyJSON.framework in Frameworks */,
+				AE1351BC1BB6E59900B4ED63 /* AFNetworking.framework in Frameworks */,
+				AE1351BA1BB6E59600B4ED63 /* Charts.framework in Frameworks */,
+				6E067597DF1FC2AA90BF56CF /* Pods_MedCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044B6A6BC381CA7DCF7806AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0DD2869661C36022D682938 /* Pods-MedCheck.debug.xcconfig */,
+				C3DEEB4458A34F076CE2FFAD /* Pods-MedCheck.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9319CA375171B6B5DA8035E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE1351BD1BB6E59C00B4ED63 /* SwiftyJSON.framework */,
+				AE1351BB1BB6E59900B4ED63 /* AFNetworking.framework */,
+				AE1351B91BB6E59600B4ED63 /* Charts.framework */,
+				72116F4743D877C49A87F084 /* Pods_MedCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE1351991BB6BE5C00B4ED63 = {
 			isa = PBXGroup;
 			children = (
 				AE1351A41BB6BE5C00B4ED63 /* MedCheck */,
 				AE1351A31BB6BE5C00B4ED63 /* Products */,
+				044B6A6BC381CA7DCF7806AD /* Pods */,
+				A9319CA375171B6B5DA8035E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE1351B61BB6BE5C00B4ED63 /* Build configuration list for PBXNativeTarget "MedCheck" */;
 			buildPhases = (
+				C24F7B448D8749F44E7F5BB5 /* Check Pods Manifest.lock */,
 				AE13519E1BB6BE5C00B4ED63 /* Sources */,
 				AE13519F1BB6BE5C00B4ED63 /* Frameworks */,
 				AE1351A01BB6BE5C00B4ED63 /* Resources */,
+				0EE9FB627413D9E93A388A2E /* Embed Pods Frameworks */,
+				C12C49C9C22AA074290B9C9A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +137,7 @@
 				TargetAttributes = {
 					AE1351A11BB6BE5C00B4ED63 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = Q7JF4W9WF8;
 					};
 				};
 			};
@@ -131,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EE9FB627413D9E93A388A2E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C12C49C9C22AA074290B9C9A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C24F7B448D8749F44E7F5BB5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE13519E1BB6BE5C00B4ED63 /* Sources */ = {
@@ -248,23 +336,43 @@
 		};
 		AE1351B71BB6BE5C00B4ED63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0DD2869661C36022D682938 /* Pods-MedCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = MedCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codejoust.MedCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AE1351B81BB6BE5C00B4ED63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DEEB4458A34F076CE2FFAD /* Pods-MedCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = MedCheck/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codejoust.MedCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -287,6 +395,7 @@
 				AE1351B81BB6BE5C00B4ED63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
