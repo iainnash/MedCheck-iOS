@@ -167,7 +167,7 @@
 				TargetAttributes = {
 					AE1351A11BB6BE5C00B4ED63 = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = Q7JF4W9WF8;
+						DevelopmentTeam = 6TN6KHJQBF;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -390,7 +390,7 @@
 				INFOPLIST_FILE = MedCheck/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codejoust.MedCheck;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dana.MedCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -412,7 +412,7 @@
 				INFOPLIST_FILE = MedCheck/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.codejoust.MedCheck;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dana.MedCheck;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

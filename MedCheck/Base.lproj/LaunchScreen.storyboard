@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,20 +17,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MedCheck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-aa-y5k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="MedCheck" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWh-aa-y5k">
                                 <rect key="frame" x="259" y="167" width="83" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="SKU-OB-Axw"/>
+                                    <constraint firstAttribute="width" constant="84" id="zlF-aj-sMS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="SKU-OB-Axw"/>
+                                        <exclude reference="zlF-aj-sMS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="SKU-OB-Axw"/>
+                                        <include reference="zlF-aj-sMS"/>
+                                    </mask>
+                                </variation>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KWh-aa-y5k" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cZ4-DC-3CB"/>
+                            <constraint firstItem="KWh-aa-y5k" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="138" id="cot-Fs-aYQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KWh-aa-y5k" secondAttribute="trailing" constant="138" id="eIT-Zr-5N9"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="KWh-aa-y5k" secondAttribute="bottom" constant="289" id="jUh-mm-BAI"/>
+                            <constraint firstItem="KWh-aa-y5k" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jfb-BW-i9j"/>
+                            <constraint firstItem="KWh-aa-y5k" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="zpc-4r-H57"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cZ4-DC-3CB"/>
+                                <exclude reference="cot-Fs-aYQ"/>
+                                <exclude reference="eIT-Zr-5N9"/>
+                                <exclude reference="jfb-BW-i9j"/>
+                                <exclude reference="zpc-4r-H57"/>
+                                <exclude reference="jUh-mm-BAI"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="cZ4-DC-3CB"/>
+                                <include reference="cot-Fs-aYQ"/>
+                                <include reference="eIT-Zr-5N9"/>
+                                <include reference="jfb-BW-i9j"/>
+                                <include reference="zpc-4r-H57"/>
+                                <include reference="jUh-mm-BAI"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="1.5" y="379"/>
         </scene>
     </scenes>
 </document>
