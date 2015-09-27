@@ -229,7 +229,7 @@
         <!--View Controller-->
         <scene sceneID="gQA-T3-6db">
             <objects>
-                <viewController id="tip-Dp-AyK" sceneMemberID="viewController">
+                <viewController id="tip-Dp-AyK" customClass="ViewController" customModule="MedCheck" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lPV-rr-P4L"/>
                         <viewControllerLayoutGuide type="bottom" id="QM7-hy-MdT"/>
@@ -281,6 +281,10 @@
                             <accessibilityTraits key="traits" button="YES"/>
                         </accessibility>
                     </view>
+                    <connections>
+                        <outlet property="codeTextField" destination="6TP-WM-WOV" id="AQN-UV-TAb"/>
+                        <outlet property="submitButton" destination="XmA-tn-Qqd" id="LBQ-k9-jGb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sab-5F-RPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

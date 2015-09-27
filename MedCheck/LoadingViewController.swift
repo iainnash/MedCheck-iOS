@@ -14,7 +14,8 @@ class LoadingViewController : UIViewController {
     
   override func viewDidAppear(animated: Bool) {
     var keychainItem: KeychainWrapper = KeychainWrapper()
-    keychainItem.
+    
+    //keychainItem.setData(
     performSegueWithIdentifier("userLoggedOut", sender: self)
     // loadInBackground()
   }
