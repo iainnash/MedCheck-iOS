@@ -8,12 +8,13 @@
 
 import Foundation
 import UIKit
-import Security
 
 class LoadingViewController : UIViewController {
     
   override func viewDidAppear(animated: Bool) {
-    var keychainItem: KeychainItemWrapper
+    //var keychainItem: KeychainWrapper = KeychainWrapper()
+    //keychainItem.
     performSegueWithIdentifier("UserLoggedOut", sender: self)
+    
   }
 }
