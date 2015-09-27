@@ -3,7 +3,7 @@
 
 target 'MedCheck' do
   use_frameworks!
-  pod 'AFNetworking', '~> 2.5'
+  pod 'Alamofire', '~> 2.0'
   pod 'SwiftyJSON'
   pod 'Charts'
 end

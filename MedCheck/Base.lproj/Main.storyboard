@@ -135,7 +135,7 @@
                     </view>
                     <connections>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="loadingToMain" id="m2R-5M-BMQ"/>
-                        <segue destination="tip-Dp-AyK" kind="presentation" id="jkn-Ea-R9k"/>
+                        <segue destination="tip-Dp-AyK" kind="presentation" identifier="GoToSignup" id="jkn-Ea-R9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5U-VR-Fny" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sab-5F-RPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2329" y="836"/>
+            <point key="canvasLocation" x="-1633" y="872"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

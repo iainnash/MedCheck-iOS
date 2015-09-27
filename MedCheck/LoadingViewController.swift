@@ -15,8 +15,8 @@ class LoadingViewController : UIViewController {
     let dataReader : HealthDataReader = HealthDataReader()
     if (HealthDataReader.canRead()) {
       dataReader.connect({ (connected: Bool) -> Void in
-        dataReader.queryHeartbeatLast();
-        self.performSegueWithIdentifier("loadingToMain", sender: self)
+        dataReader.update()
+        self.performSegueWithIdentifier("GoToSignup", sender: self)
       })
     }
   }

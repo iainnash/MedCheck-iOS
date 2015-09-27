@@ -8,9 +8,13 @@
 
 import Foundation
 import HealthKit
+import SwiftyJSON
+import AFNetworking
+import Alamofire
 
 class HealthDataReader {
   var healthStore : HKHealthStore
+  var past : NSDate
   
   static func canRead() -> Bool {
     return HKHealthStore.isHealthDataAvailable();
@@ -18,15 +22,13 @@ class HealthDataReader {
   
   init() {
     healthStore = HKHealthStore()
+    past = NSDate().dateByAddingTimeInterval(-7*24*60*60)
   }
   
-  func queryHeartbeatLast() {
-    let past : NSDate = NSDate().dateByAddingTimeInterval(-7*24*60*60);
+  func queryHealthKit(type: NSString, unit: HKUnit, sampleType: HKSampleType, past: NSDate) {
+    
     let now : NSDate = NSDate()
     
-    let heartRateUnit: HKUnit = HKUnit.countUnit().unitDividedByUnit(HKUnit.minuteUnit())
-    
-    let sampleType = HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!
     let predicate = HKQuery.predicateForSamplesWithStartDate(past, endDate: now, options: .None)
     
     let query = HKSampleQuery(sampleType: sampleType, predicate: predicate, limit: 0, sortDescriptors: nil) {
@@ -36,19 +38,34 @@ class HealthDataReader {
         print("An error occured fetching the user's tracked food. In your app, try to handle this gracefully. The error was: \(error?.localizedDescription)");
       }
       
-      dispatch_async(dispatch_get_main_queue()) {
-        
-        var out: NSString = NSString();
+      //dispatch_async(dispatch_get_main_queue()) {
+        let 👀: NSMutableArray = NSMutableArray()
         for sample in (results as? [HKQuantitySample])! {
-          let value: Double = sample.quantity.doubleValueForUnit(heartRateUnit)
-          let time: NSNumber = sample.startDate.timeIntervalSince1970 * 1000
-          out = out.stringByAppendingFormat("%f,%@\n", value, time)
+          let 💩: Double = sample.quantity.doubleValueForUnit(unit)
+          let 🕐: Double = sample.startDate.timeIntervalSince1970 * 1000
+          let sampleValue: [String: Double] = ["time": 🕐, "val": 💩]
+          👀.addObject(sampleValue)
         }
-        NSLog(out as String)
-      }
+        self.postToServer(type, data: 👀);
+      //}
     }
     self.healthStore.executeQuery(query)
   }
+  
+  func postToServer(type: NSString, data: NSMutableArray) {
+    Alamofire.request(.POST, "http://dorm.instasc.com/post.php", parameters: ["data": data], encoding: .JSON)
+      .responseString { response in
+        NSLog("Uploaded data.")
+    }
+  }
+  
+  func update() {
+    queryHealthKit("heartrate", unit: HKUnit.countUnit().unitDividedByUnit(HKUnit.minuteUnit()), sampleType: HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!, past: past)
+    queryHealthKit("stepcount", unit: HKUnit.countUnit(), sampleType: HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)!, past: past)
+    queryHealthKit("distancemoved", unit: HKUnit.meterUnit(), sampleType: HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!, past: past)
+    queryHealthKit("energyburned", unit: HKUnit.calorieUnit(), sampleType: HKSampleType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)!, past: past)
+  }
+  
   
   func connect(callback: (Bool) -> Void) {
   

@@ -8,13 +8,9 @@
 
 import Foundation
 import AFNetworking
+import SwiftyJSON
 
 class NetworkOperations {
-  //static String base = "http://localhost:3030/";
-  func get(path: String) {
-    //let manager: AFHTTPRequestOperationManager = AFHTTPRequestOperationManager()
-    
-
-  }
-
+  static var base: String = "http://localhost:3030/";
+  
 }
