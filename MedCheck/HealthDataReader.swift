@@ -9,7 +9,7 @@
 import Foundation
 import HealthKit
 import SwiftyJSON
-import AFNetworking
+//import AFNetworking
 import Alamofire
 
 class HealthDataReader {

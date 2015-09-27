@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import AFNetworking
+//import AFNetworking
 import SwiftyJSON
 
 class NetworkOperations {
