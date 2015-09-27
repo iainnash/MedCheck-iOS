@@ -21,6 +21,7 @@
 		AE1351C41BB7373800B4ED63 /* SplashPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351C31BB7373800B4ED63 /* SplashPageViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AE1351C61BB73E3C00B4ED63 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351C51BB73E3C00B4ED63 /* HealthKit.framework */; };
 		AE1351C91BB73ED800B4ED63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AE1351CB1BB750B100B4ED63 /* AppRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351CA1BB750B100B4ED63 /* AppRequestor.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		AE1351C51BB73E3C00B4ED63 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		AE1351C71BB73E3C00B4ED63 /* MedCheck.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MedCheck.entitlements; sourceTree = "<group>"; };
 		AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		AE1351CA1BB750B100B4ED63 /* AppRequestor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRequestor.swift; sourceTree = "<group>"; };
 		C3DEEB4458A34F076CE2FFAD /* Pods-MedCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck.release.xcconfig"; sourceTree = "<group>"; };
 		E0DD2869661C36022D682938 /* Pods-MedCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				AE1351BF1BB7227F00B4ED63 /* HealthDataReader.swift */,
 				AE1351C31BB7373800B4ED63 /* SplashPageViewController.swift */,
 				AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */,
+				AE1351CA1BB750B100B4ED63 /* AppRequestor.swift */,
 			);
 			path = MedCheck;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				AE1351A61BB6BE5C00B4ED63 /* AppDelegate.swift in Sources */,
 				AE1351A81BB6BE5C00B4ED63 /* FirstViewController.swift in Sources */,
 				AE1351C91BB73ED800B4ED63 /* LoadingViewController.swift in Sources */,
+				AE1351CB1BB750B100B4ED63 /* AppRequestor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,16 @@
 
 import Foundation
 import UIKit
+import AFNetworking
 
 class LoadingViewController : UIViewController {
   override func viewDidAppear(animated: Bool) {
-    performSegueWithIdentifier("loadingToMain", sender: self)
+    let dataReader : HealthDataReader = HealthDataReader()
+    if (HealthDataReader.canRead()) {
+      dataReader.connect({ (connected: Bool) -> Void in
+        dataReader.queryHeartbeatLast();
+        self.performSegueWithIdentifier("loadingToMain", sender: self)
+      })
+    }
   }
 }
