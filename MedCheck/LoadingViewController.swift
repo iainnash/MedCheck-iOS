@@ -13,8 +13,8 @@ import AFNetworking
 class LoadingViewController : UIViewController {
     
   override func viewDidAppear(animated: Bool) {
-    //var keychainItem: KeychainWrapper = KeychainWrapper()
-    //keychainItem.
+    var keychainItem: KeychainWrapper = KeychainWrapper()
+    keychainItem.
     performSegueWithIdentifier("userLoggedOut", sender: self)
     // loadInBackground()
   }
