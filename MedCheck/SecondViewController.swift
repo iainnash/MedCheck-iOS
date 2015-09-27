@@ -9,17 +9,19 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    //MARK: Properties
+    
+    //@IBOutlet weak var doctorResponse: UILabel!
+    //var trueDoctorResponse: String! = "Hello!"
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        //doctorResponse.text = trueDoctorResponse
+    }
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
-  }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 }
 

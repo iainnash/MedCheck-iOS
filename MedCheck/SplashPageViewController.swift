@@ -16,7 +16,7 @@ class SplashPageViewController : UIViewController {
   @IBOutlet var partyView : UIView!;
   
   @IBAction func clickedSubmitInvite(sender : AnyObject) {
-    
+
   }
   @IBAction func clickedContinue(sender : AnyObject) {
     

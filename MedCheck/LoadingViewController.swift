@@ -11,7 +11,15 @@ import UIKit
 import AFNetworking
 
 class LoadingViewController : UIViewController {
+    
   override func viewDidAppear(animated: Bool) {
+    //var keychainItem: KeychainWrapper = KeychainWrapper()
+    //keychainItem.
+    performSegueWithIdentifier("userLoggedOut", sender: self)
+    // loadInBackground()
+  }
+
+  func loadInBackground() {
     let dataReader : HealthDataReader = HealthDataReader()
     if (HealthDataReader.canRead()) {
       dataReader.connect({ (connected: Bool) -> Void in
@@ -20,4 +28,5 @@ class LoadingViewController : UIViewController {
       })
     }
   }
+
 }
