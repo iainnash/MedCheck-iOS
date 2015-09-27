@@ -94,6 +94,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="Doctor's Response!" image="first" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="doctorResponse" destination="NDk-cv-Gan" id="PsR-cF-zjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -307,6 +310,14 @@
                     <view key="view" contentMode="scaleToFill" id="UoU-Pm-5ER">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7t-nv-u3K">
+                                <rect key="frame" x="234" y="28" width="133" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="User Settings" image="settings38" id="dNc-d8-1V6"/>
