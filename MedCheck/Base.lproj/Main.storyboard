@@ -138,7 +138,7 @@
                     </view>
                     <connections>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="loadingToMain" id="m2R-5M-BMQ"/>
-                        <segue destination="tip-Dp-AyK" kind="presentation" id="jkn-Ea-R9k"/>
+                        <segue destination="tip-Dp-AyK" kind="presentation" identifier="UserLoggedOut" id="jkn-Ea-R9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5U-VR-Fny" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,7 +161,7 @@
                                 <rect key="frame" x="68" y="129" width="465" height="342"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gi8-qn-QgK">
-                                        <rect key="frame" x="90" y="30" width="0.0" height="0.0"/>
+                                        <rect key="frame" x="72" y="24" width="43" height="6"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
@@ -186,6 +186,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6r-gR-7kf">
                                         <rect key="frame" x="363" y="200" width="71" height="30"/>
+                                        <color key="backgroundColor" red="0.1161524090133572" green="0.21869397969275317" blue="0.66617345328282829" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Go ahead!"/>
                                         <connections>
                                             <action selector="clickedContinue:" destination="Bjs-jB-4co" eventType="touchDown" id="HAa-zY-GpC"/>
@@ -193,12 +194,13 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y04-C8-CCA">
                                         <rect key="frame" x="20" y="200" width="85" height="30"/>
+                                        <color key="backgroundColor" red="0.11623840451859406" green="0.21885589367659292" blue="0.66666666666666652" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="I'm not sure."/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua7-C0-UG2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua7-C0-UG2">
                                 <rect key="frame" x="383" y="93" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -215,6 +217,8 @@
                     </view>
                     <connections>
                         <outlet property="partyView" destination="ryq-Sz-eRe" id="upO-GQ-lMu"/>
+                        <outlet property="patientName" destination="IDA-93-Ovf" id="JQ3-Mv-V01"/>
+                        <outlet property="welcome_Label" destination="wpi-Km-goN" id="zds-z1-rGC"/>
                         <segue destination="M0E-R5-DYT" kind="show" id="bIU-aV-vUV"/>
                     </connections>
                 </viewController>
@@ -243,32 +247,39 @@
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AeW-dp-Z91" userLabel="invitefield">
                                 <rect key="frame" x="173" y="226" width="240" height="128"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TP-WM-WOV">
-                                        <rect key="frame" x="19" y="63" width="116" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invite Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nh3-t5-Wc1">
-                                        <rect key="frame" x="19" y="34" width="91" height="21"/>
+                                        <rect key="frame" x="85" y="34" width="91" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TP-WM-WOV">
+                                        <rect key="frame" x="28" y="68" width="204" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="QlN-vX-v15"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmA-tn-Qqd">
-                                <rect key="frame" x="405" y="486" width="62" height="30"/>
-                                <state key="normal" title="Let's talk"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmA-tn-Qqd">
+                                <rect key="frame" x="384" y="485" width="105" height="32"/>
+                                <color key="backgroundColor" red="0.11933431199106954" green="0.22316209683620838" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Let's talk">
+                                    <color key="titleColor" red="0.49248455982853956" green="1" blue="0.95106220087657845" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.091712214453450347" green="0.025560707809633598" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Bjs-jB-4co" kind="show" id="ep0-Oc-rxm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
                     </view>
                     <connections>
                         <outlet property="codeTextField" destination="AeW-dp-Z91" id="5Y3-qG-8dK"/>
@@ -311,9 +322,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7t-nv-u3K">
-                                <rect key="frame" x="234" y="28" width="133" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" fixedFrame="YES" text="User Settings" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7t-nv-u3K">
+                                <rect key="frame" x="233" y="28" width="133" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

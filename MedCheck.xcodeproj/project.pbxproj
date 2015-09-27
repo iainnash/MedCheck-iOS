@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E61B7121BB7A43800ED40BD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E61B7111BB7A43800ED40BD /* Security.framework */; };
+		4E61B7141BB7A5C200ED40BD /* KeychainItemWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E61B7131BB7A5C200ED40BD /* KeychainItemWrapper.swift */; settings = {ASSET_TAGS = (); }; };
 		6E067597DF1FC2AA90BF56CF /* Pods_MedCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72116F4743D877C49A87F084 /* Pods_MedCheck.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AE1351A61BB6BE5C00B4ED63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351A51BB6BE5C00B4ED63 /* AppDelegate.swift */; };
 		AE1351A81BB6BE5C00B4ED63 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351A71BB6BE5C00B4ED63 /* FirstViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E61B7111BB7A43800ED40BD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4E61B7131BB7A5C200ED40BD /* KeychainItemWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemWrapper.swift; sourceTree = "<group>"; };
 		72116F4743D877C49A87F084 /* Pods_MedCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1351A21BB6BE5C00B4ED63 /* MedCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1351A51BB6BE5C00B4ED63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E61B7121BB7A43800ED40BD /* Security.framework in Frameworks */,
 				AE1351BE1BB6E59C00B4ED63 /* SwiftyJSON.framework in Frameworks */,
 				AE1351BC1BB6E59900B4ED63 /* AFNetworking.framework in Frameworks */,
 				AE1351BA1BB6E59600B4ED63 /* Charts.framework in Frameworks */,
@@ -73,6 +78,7 @@
 		A9319CA375171B6B5DA8035E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E61B7111BB7A43800ED40BD /* Security.framework */,
 				AE1351C51BB73E3C00B4ED63 /* HealthKit.framework */,
 				AE1351BD1BB6E59C00B4ED63 /* SwiftyJSON.framework */,
 				AE1351BB1BB6E59900B4ED63 /* AFNetworking.framework */,
@@ -114,6 +120,7 @@
 				AE1351BF1BB7227F00B4ED63 /* HealthDataReader.swift */,
 				AE1351C31BB7373800B4ED63 /* SplashPageViewController.swift */,
 				AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */,
+				4E61B7131BB7A5C200ED40BD /* KeychainItemWrapper.swift */,
 			);
 			path = MedCheck;
 			sourceTree = "<group>";
@@ -247,6 +254,7 @@
 			files = (
 				AE1351C01BB7227F00B4ED63 /* HealthDataReader.swift in Sources */,
 				AE1351C41BB7373800B4ED63 /* SplashPageViewController.swift in Sources */,
+				4E61B7141BB7A5C200ED40BD /* KeychainItemWrapper.swift in Sources */,
 				AE1351AA1BB6BE5C00B4ED63 /* SecondViewController.swift in Sources */,
 				AE1351A61BB6BE5C00B4ED63 /* AppDelegate.swift in Sources */,
 				AE1351A81BB6BE5C00B4ED63 /* FirstViewController.swift in Sources */,
