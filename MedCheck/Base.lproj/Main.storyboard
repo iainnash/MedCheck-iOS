@@ -753,10 +753,10 @@
                                 <exclude reference="bpa-1i-Qbz"/>
                                 <exclude reference="shj-eB-rCW"/>
                                 <exclude reference="xRg-9b-LNU"/>
+                                <exclude reference="B03-BV-csA"/>
                                 <exclude reference="1Fo-MO-Nxq"/>
                                 <exclude reference="U7Z-TI-wOe"/>
                                 <exclude reference="iLA-T1-T9c"/>
-                                <exclude reference="B03-BV-csA"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -767,10 +767,10 @@
                                 <include reference="bpa-1i-Qbz"/>
                                 <include reference="shj-eB-rCW"/>
                                 <include reference="xRg-9b-LNU"/>
+                                <include reference="B03-BV-csA"/>
                                 <include reference="1Fo-MO-Nxq"/>
                                 <include reference="U7Z-TI-wOe"/>
                                 <include reference="iLA-T1-T9c"/>
-                                <include reference="B03-BV-csA"/>
                             </mask>
                         </variation>
                     </view>
