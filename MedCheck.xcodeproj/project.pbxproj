@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4E61B7121BB7A43800ED40BD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E61B7111BB7A43800ED40BD /* Security.framework */; };
 		4E61B7141BB7A5C200ED40BD /* KeychainItemWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E61B7131BB7A5C200ED40BD /* KeychainItemWrapper.swift */; settings = {ASSET_TAGS = (); }; };
+		4EDEECBB1BB7E6EA002415B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDEECBA1BB7E6EA002415B8 /* ViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6E067597DF1FC2AA90BF56CF /* Pods_MedCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72116F4743D877C49A87F084 /* Pods_MedCheck.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		AE1351A61BB6BE5C00B4ED63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351A51BB6BE5C00B4ED63 /* AppDelegate.swift */; };
 		AE1351A81BB6BE5C00B4ED63 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351A71BB6BE5C00B4ED63 /* FirstViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		4E61B7111BB7A43800ED40BD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		4E61B7131BB7A5C200ED40BD /* KeychainItemWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemWrapper.swift; sourceTree = "<group>"; };
+		4EDEECBA1BB7E6EA002415B8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		72116F4743D877C49A87F084 /* Pods_MedCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1351A21BB6BE5C00B4ED63 /* MedCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1351A51BB6BE5C00B4ED63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				AE1351A71BB6BE5C00B4ED63 /* FirstViewController.swift */,
 				AE1351A91BB6BE5C00B4ED63 /* SecondViewController.swift */,
 				AE1351AB1BB6BE5C00B4ED63 /* Main.storyboard */,
+				4EDEECBA1BB7E6EA002415B8 /* ViewController.swift */,
 				AE1351AE1BB6BE5C00B4ED63 /* Assets.xcassets */,
 				AE1351B01BB6BE5C00B4ED63 /* LaunchScreen.storyboard */,
 				AE1351B31BB6BE5C00B4ED63 /* Info.plist */,
@@ -263,6 +266,7 @@
 				AE1351C01BB7227F00B4ED63 /* HealthDataReader.swift in Sources */,
 				AE1351C41BB7373800B4ED63 /* SplashPageViewController.swift in Sources */,
 				4E61B7141BB7A5C200ED40BD /* KeychainItemWrapper.swift in Sources */,
+				4EDEECBB1BB7E6EA002415B8 /* ViewController.swift in Sources */,
 				AE1351AA1BB6BE5C00B4ED63 /* SecondViewController.swift in Sources */,
 				AE6A7D3F1BB7F68D00836BC1 /* LoginTokenViewController.swift in Sources */,
 				AE1351A61BB6BE5C00B4ED63 /* AppDelegate.swift in Sources */,
