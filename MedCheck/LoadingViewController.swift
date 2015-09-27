@@ -11,10 +11,6 @@ import UIKit
 import AFNetworking
 
 class LoadingViewController : UIViewController {
-  override func viewDidAppear(animated: Bool) {
-    var keychainItem: KeychainWrapper = KeychainWrapper()
-    performSegueWithIdentifier("userLoggedOut", sender: self)
-  }
 
   func loadInBackground() {
     let dataReader : HealthDataReader = HealthDataReader()
@@ -33,5 +29,6 @@ class LoadingViewController : UIViewController {
     } else {
       performSegueWithIdentifier("userLoggedOut", sender: self)
     }
+    super.viewDidAppear(animated)
   }
 }

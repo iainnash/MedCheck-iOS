@@ -436,8 +436,36 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmA-tn-Qqd">
+                                <rect key="frame" x="384" y="485" width="105" height="32"/>
+                                <color key="backgroundColor" red="0.14750791915727884" green="0.30140685790055161" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="Jv1-22-qS7"/>
+                                    <constraint firstAttribute="width" constant="179" id="VVD-Xe-tZa"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" title="Let's talk">
+                                    <color key="titleColor" red="1" green="0.99181495508330819" blue="0.99748145171300484" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.32002230892938399" green="0.58876724273940173" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Jv1-22-qS7"/>
+                                        <exclude reference="VVD-Xe-tZa"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Jv1-22-qS7"/>
+                                        <include reference="VVD-Xe-tZa"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <segue destination="Bjs-jB-4co" kind="show" id="ep0-Oc-rxm"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AeW-dp-Z91" userLabel="invitefield">
-                                <rect key="frame" x="118" y="254" width="189" height="128"/>
+                                <rect key="frame" x="206" y="130" width="189" height="128"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TP-WM-WOV">
                                         <rect key="frame" x="28" y="68" width="141" height="30"/>
@@ -527,34 +555,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XmA-tn-Qqd">
-                                <rect key="frame" x="384" y="485" width="105" height="32"/>
-                                <color key="backgroundColor" red="0.14750791915727884" green="0.30140685790055161" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="43" id="Jv1-22-qS7"/>
-                                    <constraint firstAttribute="width" constant="179" id="VVD-Xe-tZa"/>
-                                </constraints>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="Let's talk">
-                                    <color key="titleColor" red="1" green="0.99181495508330819" blue="0.99748145171300484" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" red="0.32002230892938399" green="0.58876724273940173" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Jv1-22-qS7"/>
-                                        <exclude reference="VVD-Xe-tZa"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Jv1-22-qS7"/>
-                                        <include reference="VVD-Xe-tZa"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="Bjs-jB-4co" kind="show" id="ep0-Oc-rxm"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
@@ -565,6 +565,7 @@
                             <constraint firstItem="XmA-tn-Qqd" firstAttribute="top" secondItem="AeW-dp-Z91" secondAttribute="bottom" constant="8" id="OPS-C1-oX5"/>
                             <constraint firstAttribute="trailing" secondItem="g5M-Ko-1hO" secondAttribute="trailing" constant="40" id="Ufi-r0-VVe"/>
                             <constraint firstItem="XmA-tn-Qqd" firstAttribute="leading" secondItem="JGP-LG-Zlk" secondAttribute="leading" constant="111" id="VBc-cX-6ST"/>
+                            <constraint firstItem="AeW-dp-Z91" firstAttribute="top" secondItem="g5M-Ko-1hO" secondAttribute="bottom" constant="30" id="WsS-E8-LgO"/>
                             <constraint firstAttribute="trailing" secondItem="AeW-dp-Z91" secondAttribute="trailing" constant="47" id="bpa-1i-Qbz"/>
                             <constraint firstItem="QM7-hy-MdT" firstAttribute="top" secondItem="XmA-tn-Qqd" secondAttribute="bottom" constant="102" id="dXO-oM-nwq"/>
                             <constraint firstAttribute="trailing" secondItem="XmA-tn-Qqd" secondAttribute="trailing" constant="110" id="i3f-sc-jPb"/>
@@ -607,10 +608,6 @@
                             </mask>
                         </variation>
                     </view>
-                    <connections>
-                        <outlet property="codeTextField" destination="6TP-WM-WOV" id="AQN-UV-TAb"/>
-                        <outlet property="submitButton" destination="XmA-tn-Qqd" id="LBQ-k9-jGb"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sab-5F-RPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

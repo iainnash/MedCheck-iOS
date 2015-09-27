@@ -18,9 +18,7 @@ class LoginTokenViewController : UIViewController, UITextFieldDelegate {
       if (b.value == "OK") {
         KeychainWrapper.setString(textField.text!, forKey: "GTAccessCode");
       } else {
-        let alertView : UIAlertView = UIAlertView()
-        alertView.title =  "invalid claim code "
-        //alertView.
+        let alertView : UIAlertView = UIAlertView(title: nil, message: "invalid claim", delegate: nil, cancelButtonTitle: "Cancel")
         alertView.show()
       }
     }

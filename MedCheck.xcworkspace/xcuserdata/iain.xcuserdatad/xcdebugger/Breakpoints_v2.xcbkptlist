@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MedCheck/LoadingViewController.swift"
-            timestampString = "465045201.15634"
+            timestampString = "465047231.331961"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "viewDidAppear(_:)"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "loadInBackground()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
