@@ -281,10 +281,6 @@
                             <accessibilityTraits key="traits" button="YES"/>
                         </accessibility>
                     </view>
-                    <connections>
-                        <outlet property="codeTextField" destination="AeW-dp-Z91" id="5Y3-qG-8dK"/>
-                        <outlet property="inviteCodeLabel" destination="Nh3-t5-Wc1" id="ySp-za-Q4v"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sab-5F-RPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
