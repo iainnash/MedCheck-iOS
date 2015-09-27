@@ -10,7 +10,7 @@
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="MedCheck" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YhV-Vb-yAv"/>
+                        <viewControllerLayoutGuide type="top" id="YhV-Vb-yAv" colorLabel="IBBuiltInLabel-Red"/>
                         <viewControllerLayoutGuide type="bottom" id="sxg-mh-Y4Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tl1-mJ-TOR">
@@ -317,4 +317,5 @@
         <image name="magnifying-glass40" width="32" height="32"/>
         <image name="settings38" width="32" height="32"/>
     </resources>
+    <color key="tintColor" red="0.19607844948768616" green="0.9490196704864502" blue="0.89019614458084106" alpha="1" colorSpace="deviceRGB"/>
 </document>
