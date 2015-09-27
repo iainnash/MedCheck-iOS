@@ -138,7 +138,7 @@
                     </view>
                     <connections>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="loadingToMain" id="m2R-5M-BMQ"/>
-                        <segue destination="tip-Dp-AyK" kind="presentation" identifier="UserLoggedOut" id="jkn-Ea-R9k"/>
+                        <segue destination="tip-Dp-AyK" kind="show" identifier="userLoggedOut" id="jkn-Ea-R9k"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5U-VR-Fny" userLabel="First Responder" sceneMemberID="firstResponder"/>
