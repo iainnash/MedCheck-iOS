@@ -57,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="410"/>
+            <point key="canvasLocation" x="786" y="520"/>
         </scene>
         <!--Doctor's Response!-->
         <scene sceneID="wg7-f3-ORb">
@@ -166,19 +166,13 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%@ has invited you to a conversation." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDA-93-Ovf">
-                                        <rect key="frame" x="20" y="90" width="288" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="But first, we would like to share some of your health data." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6M-kZ-bBO">
                                         <rect key="frame" x="20" y="134" width="437" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome %@," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpi-Km-goN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome Bill," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpi-Km-goN">
                                         <rect key="frame" x="20" y="38" width="282" height="29"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -197,6 +191,12 @@
                                         <color key="backgroundColor" red="0.11623840451859406" green="0.21885589367659292" blue="0.66666666666666652" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="I'm not sure."/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dr. Smith has invited you to a conversation." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDA-93-Ovf">
+                                        <rect key="frame" x="20" y="90" width="330" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -226,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="-1627" y="-8"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Token View Controller-->
         <scene sceneID="gQA-T3-6db">
             <objects>
-                <viewController id="tip-Dp-AyK" sceneMemberID="viewController">
+                <viewController id="tip-Dp-AyK" customClass="LoginTokenViewController" customModule="MedCheck" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lPV-rr-P4L"/>
                         <viewControllerLayoutGuide type="bottom" id="QM7-hy-MdT"/>
@@ -257,6 +257,9 @@
                                         <rect key="frame" x="28" y="68" width="204" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="tip-Dp-AyK" id="v7h-ya-zWt"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -272,7 +275,7 @@
                                     <color key="titleShadowColor" red="0.091712214453450347" green="0.025560707809633598" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bjs-jB-4co" kind="show" id="ep0-Oc-rxm"/>
+                                    <segue destination="Bjs-jB-4co" kind="show" identifier="GotoInvitePage" id="ep0-Oc-rxm"/>
                                 </connections>
                             </button>
                         </subviews>

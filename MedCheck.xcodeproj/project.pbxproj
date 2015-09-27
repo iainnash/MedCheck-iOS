@@ -24,6 +24,7 @@
 		AE1351C91BB73ED800B4ED63 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		AE1351CB1BB750B100B4ED63 /* AppRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1351CA1BB750B100B4ED63 /* AppRequestor.swift */; settings = {ASSET_TAGS = (); }; };
 		AE1351CD1BB7BF1D00B4ED63 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1351CC1BB7BF1D00B4ED63 /* Alamofire.framework */; };
+		AE6A7D3F1BB7F68D00836BC1 /* LoginTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6A7D3E1BB7F68D00836BC1 /* LoginTokenViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		AE1351CA1BB750B100B4ED63 /* AppRequestor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRequestor.swift; sourceTree = "<group>"; };
 		AE1351CC1BB7BF1D00B4ED63 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		AE6A7D3E1BB7F68D00836BC1 /* LoginTokenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTokenViewController.swift; sourceTree = "<group>"; };
 		C3DEEB4458A34F076CE2FFAD /* Pods-MedCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedCheck.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck.release.xcconfig"; sourceTree = "<group>"; };
 		E0DD2869661C36022D682938 /* Pods-MedCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedCheck.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedCheck/Pods-MedCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 				AE1351C81BB73ED800B4ED63 /* LoadingViewController.swift */,
 				AE1351CA1BB750B100B4ED63 /* AppRequestor.swift */,
 				4E61B7131BB7A5C200ED40BD /* KeychainItemWrapper.swift */,
+				AE6A7D3E1BB7F68D00836BC1 /* LoginTokenViewController.swift */,
 			);
 			path = MedCheck;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				AE1351C41BB7373800B4ED63 /* SplashPageViewController.swift in Sources */,
 				4E61B7141BB7A5C200ED40BD /* KeychainItemWrapper.swift in Sources */,
 				AE1351AA1BB6BE5C00B4ED63 /* SecondViewController.swift in Sources */,
+				AE6A7D3F1BB7F68D00836BC1 /* LoginTokenViewController.swift in Sources */,
 				AE1351A61BB6BE5C00B4ED63 /* AppDelegate.swift in Sources */,
 				AE1351A81BB6BE5C00B4ED63 /* FirstViewController.swift in Sources */,
 				AE1351C91BB73ED800B4ED63 /* LoadingViewController.swift in Sources */,
