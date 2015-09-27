@@ -13,6 +13,5 @@ class ViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
